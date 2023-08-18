@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav>
-      <ul className="flex items-center gap-x-2 text-[14px] text-[#444746] font-medium">
-        <li className="rounded-[30px] bg-primary text-white transition-colors">
+    <nav className="shrink">
+      <ul className="hidden md:flex items-center lg:gap-x-2 text-[14px] text-[#444746] font-medium ">
+        <li className="rounded-[30px] bg-primary text-white transition-colors ">
           <a href="#" className="inline-block py-1.5 px-3.5">
             خانه
           </a>
