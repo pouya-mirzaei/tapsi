@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 
 export default function Header() {
   return (
-    <header className="flex justify-between sm:justify-around items-center bg-gray-2 py-3.5 px-5 border border-[#e1e3e1]">
+    <header className="flex justify-between sm:justify-around items-center bg-gray-2 py-3.5 px-5 border border-[#e1e3e1] sticky">
       {/* logo */}
       <div>
         <a href="#">

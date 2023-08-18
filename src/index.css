@@ -8,3 +8,23 @@
     src: url('../public/fonts/Sans.woff') format('woff');
   }
 }
+
+@layer base {
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  html {
+    font-size: 100%;
+
+    @media (max-width: 1024px) {
+      font-size: 90%;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 85%;
+    }
+  }
+}
