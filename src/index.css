@@ -10,9 +10,17 @@
 }
 
 @layer base {
+  section {
+    @apply py-20;
+  }
+
+  body {
+    min-height: 1000vh;
+  }
+
   svg {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     fill: currentColor;
   }
 
@@ -22,9 +30,39 @@
     @media (max-width: 1024px) {
       font-size: 90%;
     }
+  }
+}
 
-    @media (max-width: 1200px) {
-      font-size: 85%;
-    }
+@layer components {
+  .heading-primary {
+    @apply text-6xl  font-semibold mb-2.5;
+  }
+
+  .heading-secondary {
+    @apply text-2xl;
+  }
+
+  .heading-tertairy {
+    @apply text-xl font-semibold;
+  }
+
+  .paragraph {
+    @apply text-black/80;
+  }
+
+  .title {
+    position: relative;
+    padding-right: 1rem;
+  }
+
+  .title::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    @apply bg-primary;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
   }
 }

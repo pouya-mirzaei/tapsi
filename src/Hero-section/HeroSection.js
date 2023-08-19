@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function HeroSection() {
   return (
-    <section className="flex items-center justify-center flex-col-reverse lg:flex-row  gap-x-10 w-full mt-28 md:px-10 sm:p-0 px-5 lg:px-20  relative">
+    <section className="container flex items-center justify-center flex-col-reverse lg:flex-row  gap-x-10 w-full relative">
       {/* images */}
       <div className="flex self-stretch gap-x-5 lg:w-1/2 relative z-10">
         <div className="w-1/2 ">
@@ -24,28 +24,28 @@ export default function HeroSection() {
       {/* intro */}
       <div className="flex justify-center flex-col gap-y-5 lg:w-1/2 relative z-10 py-20 text-center lg:text-right">
         <h6 className="text-xl ">👋سلام، من</h6>
-        <h1 className="text-6xl  font-semibold mb-2.5">تپسی سوزا هستم</h1>
-        <h2 className="text-2xl">من یک توسعه دهنده هستم</h2>
-        <h3 className="text-xl md:text-lg">
+        <h1 className="heading-primary">تپسی سوزا هستم</h1>
+        <h2 className="heading-secondary">من یک توسعه دهنده هستم</h2>
+        <p className="paragraph">
           ما با متخصصان و رهبرانی کار می کنیم که می خواهند مشاغلی ایجاد کنند که آنها را از نظر فکری و مالی تقویت کنند
-        </h3>
-        <div className="flex justify-center gap-x-2">
-          <div className="w-10 h-10 p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
+        </p>
+        <div className="flex justify-center lg:justify-start gap-x-2">
+          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
             <svg className="text-white group-hover:text-primary transition-colors">
               <use href="SVG/brands.svg#twitter"></use>
             </svg>
           </div>
-          <div className="w-10 h-10 p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
+          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
             <svg className="text-white group-hover:text-primary transition-colors">
               <use href="SVG/brands.svg#instagram"></use>
             </svg>
           </div>
-          <div className="w-10 h-10 p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
+          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
             <svg className="text-white group-hover:text-primary transition-colors">
               <use href="SVG/brands.svg#facebook"></use>
             </svg>
           </div>
-          <div className="w-10 h-10 p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
+          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
             <svg className="text-white group-hover:text-primary transition-colors">
               <use href="SVG/brands.svg#pinterest"></use>
             </svg>
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute  left-1 z-0 0 w-[500px] h-[500px] rounded-full bg-secondary blur-[100px] opacity-25"></div>
+      <div className="absolute  left-1 top-1 z-0 0 w-[500px] h-[500px] rounded-full bg-secondary blur-[100px] opacity-25"></div>
       <div className="absolute hidden lg:block right-10  z-0 w-[500px] h-[500px] rounded-full bg-primary-2 blur-[100px] opacity-25"></div>
     </section>
   );
