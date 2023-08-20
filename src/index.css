@@ -65,4 +65,12 @@
     transform: translateY(-50%);
     right: 0;
   }
+
+  .progress {
+    position: relative;
+    background-color: #000;
+    height: 100%;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactBox from './Contact-box';
+import SkillProgressBar from './SkillProgressBar';
 
 export default function Sticky() {
   return (
@@ -22,7 +23,13 @@ export default function Sticky() {
       </div>
 
       {/* skills */}
-      <div></div>
+      <div>
+        <h3 className="heading-tertairy title mt-20 mb-[30px]">مهارت ها</h3>
+        <SkillProgressBar name="HTML5" progress={92}></SkillProgressBar>
+        <SkillProgressBar name="وردپرس" progress={75}></SkillProgressBar>
+        <SkillProgressBar name="مجتنو" progress={86}></SkillProgressBar>
+        <SkillProgressBar name="UI/UX" progress={88}></SkillProgressBar>
+      </div>
     </div>
   );
 }
