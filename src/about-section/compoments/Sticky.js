@@ -6,7 +6,7 @@ export default function Sticky() {
   return (
     <div className="basis-7/12 lg:sticky top-20 self-start">
       {/* resume */}
-      <div className="flex flex-col lg:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         {/* image */}
         <div className="basis-3/5 rounded-2xl overflow-hidden">
           <img src="images/about-banner.jpg" alt="nice lady" />
@@ -23,7 +23,7 @@ export default function Sticky() {
       </div>
 
       {/* skills */}
-      <div>
+      <div className="space-y-5">
         <h3 className="heading-tertairy title mt-20 mb-[30px]">مهارت ها</h3>
         <SkillProgressBar name="HTML5" progress={92}></SkillProgressBar>
         <SkillProgressBar name="وردپرس" progress={75}></SkillProgressBar>

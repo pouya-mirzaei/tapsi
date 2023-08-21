@@ -14,10 +14,6 @@
     @apply py-20;
   }
 
-  body {
-    min-height: 1000vh;
-  }
-
   svg {
     width: 100%;
     aspect-ratio: 1/1;
@@ -72,5 +68,18 @@
     height: 100%;
     width: 0;
     transition: width 0.2s ease-in-out;
+  }
+
+  .sec-title {
+    @apply text-4xl font-semibold relative pb-4;
+  }
+  .sec-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    @apply bg-primary;
+    right: 0;
+    bottom: 0;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SkillProgressBar({ name, progress }) {
   return (
-    <div className="m-5">
+    <div>
       <h4 className="text-base mb-2.5">{name}</h4>
 
       <div className="w-full h-[5px] bg-[#edf2fa] relative">
