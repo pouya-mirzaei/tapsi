@@ -30,6 +30,7 @@
 }
 
 @layer components {
+  /* typography */
   .heading-primary {
     @apply text-6xl  font-semibold mb-2.5;
   }
@@ -45,6 +46,8 @@
   .paragraph {
     @apply text-black/80;
   }
+
+  /* title */
 
   .title {
     position: relative;
@@ -62,6 +65,8 @@
     right: 0;
   }
 
+  /* progress bar */
+
   .progress {
     position: relative;
     background-color: #000;
@@ -69,6 +74,8 @@
     width: 0;
     transition: width 0.2s ease-in-out;
   }
+
+  /* section title */
 
   .sec-title {
     @apply text-4xl font-semibold relative pb-4;

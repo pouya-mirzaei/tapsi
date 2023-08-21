@@ -1,9 +1,23 @@
 import React from 'react';
+import './../styles.css';
 
-export default function FeatureBox() {
+export default function FeatureBox({ title, icon, description }) {
   return (
-    <div className="bg-gray-1 border-2 border-[#e1e3e1] rounded-xl p-10">
-      <h5>card</h5>
+    <div className="feature-box">
+      {/* icon wrapper */}
+      <div className="feature-box__icon">
+        <svg>
+          <use href={'SVG/solid.svg#' + icon}></use>
+        </svg>
+      </div>
+
+      {/* title */}
+      <h2 className="text-xl mb-1">{title}</h2>
+
+      {/* description */}
+      <div>
+        <p className="paragraph">{description}</p>
+      </div>
     </div>
   );
 }
