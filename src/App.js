@@ -1,6 +1,7 @@
 import Header from './Header/Header';
 import HeroSection from './Hero-section/HeroSection';
 import About from './about-section/About';
+import Portfolio from './portfolio/Portfolio';
 import Services from './services/Services';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <About />
       <Services />
+      <Portfolio />
     </div>
   );
 }
