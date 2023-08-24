@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialMeiaIcons from '../SocialMediaIcons/SocialMeiaIcons';
 
 export default function HeroSection() {
   return (
@@ -29,28 +30,7 @@ export default function HeroSection() {
         <p className="paragraph">
           ما با متخصصان و رهبرانی کار می کنیم که می خواهند مشاغلی ایجاد کنند که آنها را از نظر فکری و مالی تقویت کنند
         </p>
-        <div className="flex justify-center lg:justify-start gap-x-2">
-          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
-            <svg className="text-white group-hover:text-primary transition-colors">
-              <use href="SVG/brands.svg#twitter"></use>
-            </svg>
-          </div>
-          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
-            <svg className="text-white group-hover:text-primary transition-colors">
-              <use href="SVG/brands.svg#instagram"></use>
-            </svg>
-          </div>
-          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
-            <svg className="text-white group-hover:text-primary transition-colors">
-              <use href="SVG/brands.svg#facebook"></use>
-            </svg>
-          </div>
-          <div className="w-10  p-2.5 bg-primary hover:bg-white border border-primary rounded-md cursor-pointer group transition-colors">
-            <svg className="text-white group-hover:text-primary transition-colors">
-              <use href="SVG/brands.svg#pinterest"></use>
-            </svg>
-          </div>
-        </div>
+        <SocialMeiaIcons></SocialMeiaIcons>
       </div>
 
       <div className="absolute  left-1 top-1 z-0 0 w-[500px] h-[500px] rounded-full bg-secondary blur-[100px] opacity-25"></div>
