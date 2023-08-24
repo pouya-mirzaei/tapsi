@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProjectBox({ img }) {
+export default function ProjectBox({ img, title, description }) {
   return (
     <div className="rounded-xl bg-white p-2.5 border-2 border-[#e1e3e1] relative group">
       <div className="rounded-xl overflow-hidden ">
@@ -18,8 +18,8 @@ export default function ProjectBox({ img }) {
             {/* title */}
 
             <div>
-              <h3 className="text-base font-medium">طراحی برنامه گوشی</h3>
-              <p className="paragraph text-xs">برنامه گوشی و طراحی برنامه</p>
+              <h3 className="text-base font-medium">{title}</h3>
+              <p className="paragraph text-xs">{description}</p>
             </div>
 
             {/* icon */}
