@@ -1,6 +1,5 @@
 import React from 'react';
 import LicenseBox from './components/LicenseBox';
-import SocialMediaIcons from './../SocialMediaIcons/SocialMeiaIcons';
 
 export default function LicenseSection() {
   const boxData = [

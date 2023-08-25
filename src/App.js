@@ -1,3 +1,4 @@
+import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeroSection from './Hero-section/HeroSection';
 import About from './about-section/About';
@@ -9,11 +10,16 @@ function App() {
   return (
     <div className="App font-primary">
       <Header />
-      <HeroSection />
-      <About />
-      <Services />
-      <Portfolio />
-      <LicenseSectio />
+
+      <main>
+        <HeroSection />
+        <About />
+        <Services />
+        <Portfolio />
+        <LicenseSectio />
+      </main>
+
+      <Footer />
     </div>
   );
 }
