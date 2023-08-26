@@ -1,14 +1,14 @@
 import React from 'react';
 import Contact from './ContactUs/Contact';
-import ContactForm from './Contact-form/ContactForm';
+import Form from '../Form/Form';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-1 py-10">
+    <footer className="bg-gray-1 py-10" id="footer">
       <div className="container">
-        <div className="flex items-center  w-full gap-16 [&>*]:basis-1/2">
+        <div className="flex items-center  w-full gap-16">
           <Contact />
-          <ContactForm />
+          <Form />
         </div>
       </div>
     </footer>

@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function LicenseBox({ avatar, title, description, name, role }) {
   return (
-    <div className="flex items-center p-6 flex-col border-2 border-[#e1e3e1] rounded-xl">
-      <div className="w-[100px] h-[100px] rounded-full p-1 border-2 border-[#e1e3e1]">
+    <div className="flex items-center p-6 flex-col border-2 border-tertiary rounded-xl">
+      <div className="w-[100px] h-[100px] rounded-full p-1 border-2 border-tertiary">
         <img src={`images/avatars/avatar-${avatar}.jpg`} className="rounded-full" alt="avatar1" />
       </div>
       <div className="mt-5">

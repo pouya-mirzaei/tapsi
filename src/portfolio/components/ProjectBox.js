@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProjectBox({ img, title, description }) {
   return (
-    <div className="rounded-xl bg-white p-2.5 border-2 border-[#e1e3e1] relative group">
+    <div className="rounded-xl bg-white p-2.5 border-2 border-tertiary relative group">
       <div className="rounded-xl overflow-hidden ">
         <img src={`images/portofilo/project-${img}.jpg`} alt={`project ${img}`} />
 
@@ -13,7 +13,7 @@ export default function ProjectBox({ img, title, description }) {
           </svg>
         </div>
         {/* description  */}
-        <div className="rounded-xl bg-gray-1 p-5 border-2 border-[#e1e3e1] absolute z-20 bottom-0 group-hover:bottom-5 left-[5%] right-[5%] w-[90%] opacity-0 group-hover:opacity-100 transition-all duration-300">
+        <div className="rounded-xl bg-gray-1 p-5 border-2 border-tertiary absolute z-20 bottom-0 group-hover:bottom-5 left-[5%] right-[5%] w-[90%] opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="flex items-center justify-between">
             {/* title */}
 

@@ -10,22 +10,22 @@ export default function Navbar() {
           </a>
         </li>
         <li className="rounded-[30px] hover:bg-primary hover:text-white transition-colors">
-          <a href="#" className="inline-block py-1.5 px-3.5">
+          <a href="#about" className="inline-block py-1.5 px-3.5">
             درباره ما
           </a>
         </li>
         <li className="rounded-[30px] hover:bg-primary hover:text-white transition-colors">
-          <a href="#" className="inline-block py-1.5 px-3.5">
+          <a href="#services" className="inline-block py-1.5 px-3.5">
             خدمات
           </a>
         </li>
         <li className="rounded-[30px] hover:bg-primary hover:text-white transition-colors">
-          <a href="#" className="inline-block py-1.5 px-3.5">
+          <a href="#portofilo" className="inline-block py-1.5 px-3.5">
             نمونه کار
           </a>
         </li>
         <li className="rounded-[30px] hover:bg-primary hover:text-white transition-colors">
-          <a href="#" className="inline-block py-1.5 px-3.5">
+          <a href="#footer" className="inline-block py-1.5 px-3.5">
             تماس با ما
           </a>
         </li>

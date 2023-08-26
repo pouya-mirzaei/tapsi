@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ExperienceBpx() {
   return (
-    <div className="w-full bg-white border-2 border-[#e1e3e1] rounded-xl pl-5 py-2.5 pr-[70px] relative">
+    <div className="w-full bg-white border-2 border-tertiary rounded-xl pl-5 py-2.5 pr-[70px] relative">
       <div className="w-5 text-primary absolute top-5 right-5">
         <svg>
           <use href="SVG/solid.svg#toolbox"></use>

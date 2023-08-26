@@ -20,6 +20,7 @@ module.exports = {
           1: '#f8fafd',
           2: '#f3f6fc',
         },
+        tertiary: '#e1e3e1',
       },
 
       fontFamily: {
