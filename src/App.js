@@ -1,3 +1,4 @@
+import ContactUs from './Contact-us/ContactUs';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeroSection from './Hero-section/HeroSection';
@@ -17,9 +18,9 @@ function App() {
         <Services />
         <Portfolio />
         <LicenseSectio />
+        <ContactUs />
       </main>
-
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }
