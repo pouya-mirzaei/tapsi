@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-1 py-10" id="footer">
       <div className="container">
-        <div className="flex items-center  w-full gap-16">
+        <div className="flex flex-col lg:flex-row  w-full gap-16">
           <Contact />
           <Form />
         </div>

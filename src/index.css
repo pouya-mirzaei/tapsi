@@ -93,4 +93,18 @@
     right: 0;
     bottom: 0;
   }
+
+  /* form */
+
+  .text-input {
+    @apply w-full border border-tertiary rounded-xl py-2.5 px-3 placeholder:text-sm outline-primary-2;
+  }
+
+  .submit {
+    @apply bg-primary text-white rounded-xl px-[35px] py-[15px] w-full border-2 border-primary transition-all cursor-pointer duration-200;
+  }
+
+  .submit:hover {
+    @apply bg-white text-primary;
+  }
 }
