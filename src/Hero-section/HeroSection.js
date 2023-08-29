@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMeiaIcons from '../SocialMediaIcons/SocialMeiaIcons';
+import Typewriter from 'typewriter-effect';
 
 export default function HeroSection() {
   return (
@@ -26,7 +27,20 @@ export default function HeroSection() {
       <div className="flex justify-center flex-col gap-y-5 lg:w-1/2 relative z-10 py-20 text-center lg:text-right">
         <h6 className="text-xl ">👋سلام، من</h6>
         <h1 className="heading-primary">تپسی سوزا هستم</h1>
-        <h2 className="heading-secondary">من یک توسعه دهنده هستم</h2>
+        <h2 className="heading-secondary">
+          <Typewriter
+            onInit={(tp) => {
+              tp.pauseFor(1000)
+                .typeString('من یک طراح هستم')
+                .pauseFor(1500)
+                .deleteChars(9)
+                .typeString('توسعه دهنده هستم')
+                .pauseFor(1500)
+                .deleteChars(7)
+                .start();
+            }}
+            options={{ loop: true }}></Typewriter>
+        </h2>
         <p className="paragraph">
           ما با متخصصان و رهبرانی کار می کنیم که می خواهند مشاغلی ایجاد کنند که آنها را از نظر فکری و مالی تقویت کنند
         </p>
