@@ -34,12 +34,14 @@ export default class LicenseSection extends React.Component {
 
   render() {
     return (
-      <section className="container">
-        <h2 className="sec-title mb-11">گواهینامه ها</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 grid-rows-1">
-          <LicenseBox {...this.state.boxData[0]}></LicenseBox>
-          <LicenseBox {...this.state.boxData[1]}></LicenseBox>
-          <LicenseBox {...this.state.boxData[2]}></LicenseBox>
+      <section className="dark:bg-dark-1 dark:text-light">
+        <div className="container">
+          <h2 className="sec-title mb-11">گواهینامه ها</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 grid-rows-1">
+            <LicenseBox {...this.state.boxData[0]}></LicenseBox>
+            <LicenseBox {...this.state.boxData[1]}></LicenseBox>
+            <LicenseBox {...this.state.boxData[2]}></LicenseBox>
+          </div>
         </div>
       </section>
     );

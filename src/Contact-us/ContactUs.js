@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 
 export default function ContactUs() {
   return (
-    <section className="bg-gray-1 border-b border-tertiary" id="footer">
+    <section className="bg-gray-1 dark:bg-dark-2 dark:text-light border-b border-tertiary" id="footer">
       <div className="container">
         <div className="flex flex-col lg:flex-row  w-full gap-16">
           <Contact />

@@ -4,6 +4,7 @@
   border-radius: 10px;
   padding: 40px;
   position: relative;
+  @apply dark:bg-dark-2 dark:border;
 }
 
 .feature-box::before {
@@ -14,6 +15,7 @@
   border-radius: 10px;
   background-color: #edf2fa;
   transition: all 0.2s;
+  @apply dark:bg-[#36383c];
 }
 
 .feature-box:hover::before {

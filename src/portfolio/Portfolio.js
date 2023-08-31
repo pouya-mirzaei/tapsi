@@ -3,7 +3,7 @@ import ProjectBox from './components/ProjectBox';
 
 export default function Portfolio() {
   return (
-    <section className="bg-gray-1" id="portofilo">
+    <section className="bg-gray-1 dark:bg-dark-2 dark:text-light" id="portofilo">
       <div className="container">
         <h2 className="sec-title mb-11">نمونه کار های من</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">

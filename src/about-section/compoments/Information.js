@@ -16,11 +16,11 @@ export default function Information() {
         <div className="flex items-start justify-around">
           <div className="flex items-center gap-x-2.5">
             <span className="text-4xl font-semibold">5 هزار</span>
-            <span className="leading-normal w-2/5 text-black/80">پروژه تکمیل شده.</span>
+            <span className="leading-normal w-2/5 text-black/80 dark:text-light">پروژه تکمیل شده.</span>
           </div>
           <div className="flex items-center gap-x-2.5">
             <span className="text-4xl font-semibold">3 هزار</span>
-            <span className="leading-normal w-2/5 text-black/80">مشتریان راضی.</span>
+            <span className="leading-normal w-2/5 text-black/80 dark:text-light">مشتریان راضی.</span>
           </div>
         </div>
       </div>
