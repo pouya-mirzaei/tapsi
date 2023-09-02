@@ -1,15 +1,25 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import './header.css';
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      hamburger: true,
+    };
+
     this.handleToggle = this.handleToggle.bind(this);
+    this.hadndleCLick = this.hadndleCLick.bind(this);
   }
 
   handleToggle() {
     this.props.onToggleDark();
+  }
+
+  hadndleCLick() {
+    this.setState({ hamburger: !this.state.hamburger });
   }
 
   render() {
@@ -18,7 +28,8 @@ export default class Header extends React.Component {
         {/* logo */}
         <div>
           <a href="#">
-            <img src="images/logo.png" className="w-[86px]" alt="logo" />
+            <img src="images/logo.png" className="w-[86px] dark:hidden" alt="logo" />
+            <img src="images/logo-light.png" className="w-[86px] hidden dark:block" alt="logo" />
           </a>
         </div>
 
@@ -27,6 +38,7 @@ export default class Header extends React.Component {
 
         {/* light/dark mode */}
         <div className="flex items-center gap-1">
+          {/* theme switch */}
           <div
             className="cursor-pointer bg-primary text-white dark:text-light px-3 py-1.5 rounded-lg"
             onClick={this.handleToggle}>
@@ -57,8 +69,10 @@ export default class Header extends React.Component {
               />
             </svg>
           </div>
-          <div className="cursor-pointer bg-primary text-white dark:text-light px-3 py-1.5 rounded-lg md:hidden relative">
-            <label htmlFor="hamburger">
+
+          {/* sub menu */}
+          <div className="bg-primary text-white dark:text-light px-3 py-1.5 rounded-lg md:hidden">
+            <label htmlFor="hamburger" onClick={this.hadndleCLick}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -69,8 +83,44 @@ export default class Header extends React.Component {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </label>
-            <input type="checkbox" className="hidden" id="hamburger" />
-            <div className="hidden">sum menu</div>
+            <input type="checkbox" className="theme-toggle-input" checked={this.state.hamburger} id="hamburger" />
+            <div className="sub-menu dark:bg-dark-1">
+              <ul className="flex flex-col  lg:gap-x-2 text-[14px] text-[#444746] font-medium space-y-4 [&>*]:w-max">
+                <li onClick={this.hadndleCLick} className="rounded-[30px] bg-primary text-white transition-colors ">
+                  <a href="#" className="inline-block py-1.5 px-3.5">
+                    خانه
+                  </a>
+                </li>
+                <li
+                  onClick={this.hadndleCLick}
+                  className="rounded-[30px] hover:bg-primary hover:text-light dark:text-light transition-colors">
+                  <a href="#about" className="inline-block py-1.5 px-3.5">
+                    درباره ما
+                  </a>
+                </li>
+                <li
+                  onClick={this.hadndleCLick}
+                  className="rounded-[30px] hover:bg-primary hover:text-light dark:text-light transition-colors">
+                  <a href="#services" className="inline-block py-1.5 px-3.5">
+                    خدمات
+                  </a>
+                </li>
+                <li
+                  onClick={this.hadndleCLick}
+                  className="rounded-[30px] hover:bg-primary hover:text-light dark:text-light transition-colors">
+                  <a href="#portofilo" className="inline-block py-1.5 px-3.5">
+                    نمونه کار
+                  </a>
+                </li>
+                <li
+                  onClick={this.hadndleCLick}
+                  className="rounded-[30px] hover:bg-primary hover:text-light dark:text-light transition-colors">
+                  <a href="#footer" className="inline-block py-1.5 px-3.5">
+                    تماس با ما
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
