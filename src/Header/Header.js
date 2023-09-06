@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      hamburger: true,
+      hamburger: false,
     };
 
     this.handleToggle = this.handleToggle.bind(this);
